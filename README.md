@@ -1,3 +1,10 @@
-Movie_app
+#Movie-App
 
-Make Movie_app with ReactJS
+Make Movie_app with ReactJS and ES6
+
+##Pages 
+
+- [] Home
+- [] TV shows
+- [] Search
+- [] Detail

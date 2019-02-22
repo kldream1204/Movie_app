@@ -1,5 +1,5 @@
 import React from "react";
-import {HashRouter as Router,
+import {BrowserRouter as Router,
         Route,
         Redirect, 
         Switch
@@ -15,7 +15,7 @@ export default () => (
             <Header></Header>       
             <Switch>
                 <Route path="/" exact component={Home}/>
-                <Route path="/tv" exact component={TV}/>
+                <Route path="/tv"  component={TV}/>
                 <Route path="/search" component={Search}/>
                 <Redirect from="*" to="/"/>
             </Switch>    

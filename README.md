@@ -13,6 +13,9 @@ Make Movie_app with ReactJS and ES6
 
 - [] Now Playing (Movie)
 - [] Upcoming (Movie)
-- [] Top Rated (Movie, TV)
+- [] Top Rated (TV)
 - [] Popular (Movie, TV)
 - [] Airing Today (TV)
+- [] Movie Detail
+- [] TV Show Detail
+- [] Search

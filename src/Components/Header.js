@@ -13,7 +13,7 @@ const Header = styled.header`
     color: white;
     padding: 0 10px;
     background-color: rgba(20, 20, 20, 0.8);
-    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.8)
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.8);
 `;
 
 const List = styled.ul`
@@ -25,7 +25,7 @@ const Item = styled.li`
     height: 50px;
     text-align: center;
     border-bottom: 5px solid 
-    ${props => (props.current ? "red" : "transparent")}
+    ${props => (props.current ? "red" : "transparent")};
     transition: 0.5s ease-in-out;
 `;
 
@@ -37,7 +37,7 @@ const SLink = styled(Link)`
     justify-content: center;
 `;
 
-export default withRouter ( ({location:{pathname}}) => (
+export default withRouter ( ({location:{pathname}} ) => (
     <Header>
         {console.log(pathname)}
         <List>

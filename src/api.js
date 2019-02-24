@@ -17,7 +17,7 @@ export const TVApi = {
             append_to_response: "videos"
         }
     }),
-    showSearch: (term) => api.get("search/tv", {
+    search: (term) => api.get("search/tv", {
         params: {
             query: encodeURIComponent(term)
         }
@@ -25,7 +25,7 @@ export const TVApi = {
 }
 
 export const MoviesApi = {
-    nowPlaying: () => api.get("movie/now_playibg"),
+    nowPlaying: () => api.get("movie/now_playing"),
     upComing: () => api.get("movie/upcoming"),
     popular: () => api.get("movie/popular"),
     movieDetail: (id) => api.get(`movie/${id}`, {
@@ -33,7 +33,7 @@ export const MoviesApi = {
             append_to_response: "videos"
         }
     }),
-    movieSearch: (term) => api.get("search/movie", {
+    search: (term) => api.get("search/movie", {
         params: {
             query: encodeURIComponent(term)
         }

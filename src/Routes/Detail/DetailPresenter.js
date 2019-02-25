@@ -41,19 +41,36 @@ const Cover = styled.div`
     background-position: center;
 `;
 
-const Data = styled.div``;
+const Data = styled.div`
+    margin-left: 20px;
+`;
 
-const Title = styled.span``;
+const Title = styled.span`
+    font-size: 32px;
+    font-weight: bold;
+`;
 
-const InfoContainer =styled.div``;
+const InfoContainer =styled.div`
+    margin: 20px 0;
+`;
 
-const Date = styled.span``;
+const Date = styled.span`
+    padding-right: 10px;
+`;
 
-const RunTime = styled.span``;
+const RunTime = styled.span`
+    padding-right: 10px;
+`;
 
-const Genres = styled.span``;
+const Genres = styled.span`
+    padding-right: 10px;
+`;
 
-const Overview = styled.span``;
+const Overview = styled.div`
+    width: 50%;
+    opacity: 0.6;
+    line-height: 1.5;
+`;
 
 const DetailPresenter = ({Detail, error, loading}) => 
     loading ? 
@@ -69,12 +86,13 @@ const DetailPresenter = ({Detail, error, loading}) =>
                         </Title>
                         <InfoContainer>
                             <Date>
-                                {Detail.release_date.substring(0, 4)}
+                                { Detail.release_date ? Detail.release_date.substring(0, 4) : Detail.first_air_date.substring(0, 4)}
                             </Date>
                             <RunTime>
-                                {Detail.runtime}min
+                                {Detail.runtime ? Detail.runtime : Detail.episode_run_time[0]}min
                             </RunTime>
                             <Genres>
+                                {Detail.genres.map((genres, index) => index === Detail.genres.length -1 ? genres.name : `${genres.name}    /`) }
                             </Genres>
                         </InfoContainer>
                         <Overview>

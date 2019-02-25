@@ -4,18 +4,18 @@ Make Movie_app with ReactJS and ES6
 
 ## Pages 
 
-- [] Home
-- [] TV shows
-- [] Search
-- [] Detail
+- [x] Home
+- [x] TV shows
+- [x] Search
+- [x] Detail
 
 ## API Verbs
 
-- [] Now Playing (Movie)
-- [] Upcoming (Movie)
-- [] Top Rated (TV)
-- [] Popular (Movie, TV)
-- [] Airing Today (TV)
-- [] Movie Detail
+- [x] Now Playing (Movie)
+- [x] Upcoming (Movie)
+- [x] Top Rated (TV)
+- [x] Popular (Movie, TV)
+- [x] Airing Today (TV)
+- [x] Movie Detail
 - [] TV Show Detail
-- [] Search
+- [x] Search

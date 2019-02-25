@@ -6,7 +6,7 @@ import Loader from "Components/Loader";
 import Message from "Components/Message";
 import Poster from "Components/Poster";
 
-const Container =styled.div`
+const Container = styled.div`
     margin: 50px 20px;   
 `;
 
@@ -32,7 +32,7 @@ const HomePresenter = ({nowPlaying, upComing, popular, error, loading}) =>
             )}
             {upComing && upComing.length > 0 && (
             <Section title="UPCOMING MOVIES">
-                {nowPlaying.map( movie => 
+                {upComing.map( movie => 
                     <Poster key={movie.id}
                             id={movie.id} 
                             title={movie.original_title}
@@ -46,7 +46,7 @@ const HomePresenter = ({nowPlaying, upComing, popular, error, loading}) =>
             )}
             {popular && popular.length > 0 && (
             <Section title="POPULAR MOVIES">
-                {nowPlaying.map( movie => 
+                {popular.map( movie => 
                     <Poster key={movie.id}
                             id={movie.id} 
                             title={movie.original_title}

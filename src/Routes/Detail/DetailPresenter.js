@@ -77,7 +77,7 @@ const DetailPresenter = ({Detail, error, loading}) =>
         <Loader/>
         :(
             <Container>
-                <Backdrop bgUrl={`https://image.tmdb.org/t/p/w500${Detail.backdrop_path}`}/>
+                <Backdrop bgUrl={`https://image.tmdb.org/t/p/original${Detail.backdrop_path}`}/>
                 <Content>
                     <Cover bgUrl={ Detail.poster_path ? `https://image.tmdb.org/t/p/w500${Detail.poster_path}` : require("../../assets/no-image.jpg")}/>
                     <Data>
